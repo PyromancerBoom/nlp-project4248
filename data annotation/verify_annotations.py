@@ -3,7 +3,6 @@ import pandas as pd
 import time
 from tqdm import tqdm
 import csv
-import pickle
 
 with open('sarcasm_classifications.csv', encoding="utf-8") as f:
     csv_reader = csv.DictReader(f)
