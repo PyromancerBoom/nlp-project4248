@@ -88,6 +88,23 @@ The final results are saved to `final_sarcasm_classifications.csv`.
 - When using this data for training models, consider weighing examples by confidence or using a multi-label approach for ambiguous cases
 - These annotations are based on linguistic patterns rather than author intent, which isn't available
 
+## Technical Details
+
+### Hardware Configuration
+- CPU: AMD Ryzen 7 7700X 8-Core Processor
+- RAM: 32.0 GB
+- GPU: NVIDIA GeForce RTX 4070 SUPER
+
+### Runtime Information
+- Initial Classification (annotate_dataset.py): ~50 minutes for 13,634 headlines
+- Verification (verify_annotations.py): ~50 minutes
+- Conflict Resolution (finalize_annotations.py): ~50 minutes
+
+### Software Environment
+- Python version: 3.11.9
+- Ollama version: 0.5.13
+- OS: Windows
+
 ## References
 
 Our categorization scheme is inspired by academic literature on sarcasm detection, particularly the types of sarcasm identified in:
