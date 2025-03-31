@@ -461,6 +461,10 @@ class CLTrainer(Trainer):
                     with model.no_sync():
                         tr_loss += self.training_step(model, inputs)
                 else:
+                    # print("run step: ", step)
+                    # print("inputs shape: ", inputs.shape)
+                    # print("input: ", inputs[''])
+                    # print("model shape: ", model.shape)
                     tr_loss += self.training_step(model, inputs)
                 self._total_flos += self.floating_point_ops(inputs)
 

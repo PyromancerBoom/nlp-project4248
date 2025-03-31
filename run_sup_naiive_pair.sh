@@ -18,8 +18,8 @@ export OMP_NUM_THREADS=8
 # python -m torch.distributed.launch --nproc_per_node $NUM_GPU --master_port $PORT_ID train.py \
 CUDA_VISIBLE_DEVICES=1 python train.py \
     --model_name_or_path bert-base-uncased \
-    --train_file data/nli_for_simcse.csv \
-    --output_dir result/my-sup-simcse-bert-base-uncased \
+    --train_file data/sarcasm_v2_deepseek_entailments_pair.csv \
+    --output_dir result/my-sup-simcse-bert-base-uncased-entailment \
     --num_train_epochs 3 \
     --per_device_train_batch_size 128 \
     --learning_rate 5e-5 \
